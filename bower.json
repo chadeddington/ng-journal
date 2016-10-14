@@ -1,0 +1,25 @@
+{
+  "name": "journal",
+  "description": "A journal site",
+  "main": "app.js",
+  "authors": [
+    "cdavideddington@gmail.com"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "nodejs",
+    "node.js",
+    "express",
+    "seed",
+    "template",
+    "starter"
+  ],
+  "homepage": "https://github.com/chadeddington/express-seed",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ]
+}

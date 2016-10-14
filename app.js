@@ -6,10 +6,10 @@ var express = require('express'),
 app.set('views', './views');
 app.set('view engine', 'ejs');
 app.use(bodyParser.json());
+// location for templates
 app.use(express.static(__dirname + "/views"));
 
 // Routes
-
 app.get('/', function(req, res) {
   res.render('index');
 })
