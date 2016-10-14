@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+  <head>
+    <!-- bower_components -->
+    <!-- When in prod use minified version -->
+    <script src='/bower_components/angular/angular.js'></script>
+
+    <script src='/assets/js/app/demo.module.js'></script>
+  </head>
+
+  <body ng-app='demo'>
+    <h1>Landing Page</h1>
+    <div ng-controller='SampleCtrl'>
+      <label>Search:</label>
+      <input ng-model='search' placeholder='Search' autofocus>
+      <ul>
+        <li ng-repeat='person in data | filter: search'>
+          <span>{{person.firstName}}</span>
+          <span>{{person.lastName | uppercase}}</span>
+        </li>
+      </ul>
+      <p>{{data.firstName}}</p>
+    </div>
+  </body>
+</html>
