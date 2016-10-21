@@ -6,14 +6,19 @@
     <!-- When in prod use minified version -->
     <script src='/bower_components/angular/angular.min.js'></script>
     <script src='/bower_components/angular-route/angular-route.js'></script>
-    <script src='/assets/js/app/app.module.js'></script>
-    <script src='/assets/js/app/demo.module.js'></script>
+    <script src='/assets/app/app.module.js'></script>
+    <script src='/assets/app/demo.module.js'></script>
+    <script src='/assets/app/login.module.js'></script>
+    <link rel="stylesheet" href="/assets/main.css">
   </head>
 
-  <body ng-app='demo'>
-    <h1>Landing Page</h1>
-    <div ng-view>
-      
+  <body ng-app='journalApp'>
+    
+    <div class="navbar">
+      <div class="navbar-contents">
+        <h1>Journal</h1>
+      </div>
     </div>
+    <div ng-view></div>
   </body>
 </html>

@@ -1,0 +1,92 @@
+body, html {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+input {
+  border: 1px solid #ccc;
+}
+
+button {
+  border: 1px solid #2e6da4;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/*************
+ Navbar
+ ************/
+.navbar-contents h1 {
+  text-align: left;
+}
+
+.navbar {
+  background-color: #337ab7;
+  padding: 5px;
+  color: white;
+}
+
+.navbar-contents {
+  margin-left: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/****************
+ log in form
+ ***************/
+
+.login-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.login-form input, .login-form button {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.login-form input[type=email] {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.login-form input[type=password] {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.login-form button {
+  margin-top: 10px;
+  background-color: #337ab7;
+  color: white;
+}
+
+.login-form button:hover {
+  background-color: #286090;
+  cursor: pointer;
+}
+
+.or {
+  text-align: center;
+  font-size: 18px;
+  margin: 50px;
+}
+
