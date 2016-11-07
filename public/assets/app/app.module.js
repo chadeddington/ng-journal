@@ -4,6 +4,10 @@ var journalApp = angular.module('journalApp', [
   'login'
 ]);
 
+journalApp.run(function($rootScope) {
+    $rootScope.loggedIn = false;
+})
+
 journalApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
     when('/login', {
@@ -17,4 +21,4 @@ journalApp.config(['$routeProvider', function($routeProvider) {
     otherwise({
       redirectTo: '/login'
     })
-}])
+}]);

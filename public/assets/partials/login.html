@@ -1,26 +1,44 @@
 <div class='container'> 
+
+  <div class="alert success" ng-hide='hideRegisterSuccess'>
+    <div class='alert-content'>
+      <strong>Success!</strong> Your account was successfully created! Please use your credentials to sign in.
+    </div>
+    <span class='alert-close' ng-click='closeAlert()'>×</span>
+  </div>
+  <div class="alert error" ng-hide='hideRegisterError'>
+    <div class='alert-content'>
+      <strong>Error!</strong> There was an error regestering your new account
+    </div>
+    <span class='alert-close' ng-click='closeAlert()'>×</span>
+  </div>
+  <div class="alert error" ng-hide='hideLoginError'>
+    <div class='alert-content'>
+      <strong>Error!</strong> There was an error logging in
+    </div>
+    <span class='alert-close' ng-click='closeAlert()'>×</span>
+  </div>
+
   <h1>Sign In</h1>
 
   <form class='login-form'>
-    
-    <input type='email' placeholder='Email address'>
-    <input type="password" placeholder='Password'>
-    <button ng-click='signIn()'>Sign In</button>
-
+    <input id='user-username' class='input-top' type='text' placeholder='User name' ng-model='user.username'>
+    <input class='input-bottom' type="password" placeholder='Password' ng-model='user.password'>
+    <input type='submit' ng-click='signIn()' value='Sign In' ng-disabled='loginFormCheck()'>
   </form>
 
   <div class="or">
-    Not a member?
+    Don't have an account?
   </div>
 
   <h1>Create an Account</h1>
 
   <form class='login-form'>
-    <input type='email' placeholder='Email address'>
-    <input type="password" placeholder='Password'>
-  <button ng-click='register()'>Create Account</button>
-
+    <input class='input-top' type="text" placeholder='User name' ng-model='newUser.username'>
+    <input class='input-middle' type='email' placeholder='Email address' ng-model='newUser.email'>
+    <input class='input-middle' type="password" placeholder='Password' ng-model='newUser.password1'>
+    <input class='input-bottom' type="password" placeholder='Retype Password' ng-model='newUser.password2'>
+    <input type='submit' ng-click='register()' ng-disabled='registerFormCheck()' value='Create Account'>
   </form>
     
-  
 </div>
